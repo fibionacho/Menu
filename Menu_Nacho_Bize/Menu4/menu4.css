@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+
+}
+h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: grey;
+}
+#titulo{
+    text-align: center;
+    width: 100%;
+    margin:3%;
+}
+li{
+    list-style: none;
+    text-align: center;
+    padding: 1%;;
+    
+}
+#box{
+    
+    width:140px;
+    height:100%;
+}
+#home{
+    background-color: orangered;
+}
+#pagina{
+    background-color: orange;
+}
+#google{
+    background-color: aqua;
+}
+#apple{
+    background-color: lightseagreen;
+}
+#htm{
+    background-color: blue;
+}
+#correo{
+    background-color: darkblue;
+}
+ li{
+    border-radius:50px 0px 0px 50px;
+    transition-duration: 0.5s;
+}
+p{
+    font-size: large;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+}
+img{
+    border-radius: 50%;
+    padding: 2%;
+    background-color: lightgray;
+    transition: 0.5s;
+    margin-top: 15%;
+}
+li:hover{
+    width: 150%;
+    border-radius:50px 100px 100px 50px;
+    transition: 0.5s;
+
+}
+li:hover>img{
+    
+     background-color: goldenrod;
+     width: 50%;
+     transition-property: all;
+     transition-duration: 0.5s;
+     transition-timing-function:ease-in-out;
+ }
+ li:hover>img{
+    box-shadow: 0px 0px 30px 25px white  ;
+    transition-timing-function:ease-in-out;
+    transition: 0.5s;
+    /*transition:inherit;*/
+}
+li:hover>p{
+    font-weight: bolder;
+    color:black;
+    transition-duration: 0.5s;
+
+}

@@ -1,0 +1,85 @@
+/* CREAMOS LA LISTA PURA Y DURA Y LA DEJAMOS UBICADA EN LA PANTALLA DONDE QUEREMOS QUE APAREZCA */
+
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin: 0 auto;
+				width:600px;
+				font-family:Arial, Helvetica, sans-serif;
+				
+			}
+			
+				ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+/* HASTA AQUI HEMOS CREADO LA LISTA DE OPCIONES Y UBICADO EN LA PANTALLA, SIN DAR ESTILO PRÁCTICAMENTE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	A CONTINUACIÓN TENEMOS EL MENÚ COMPLETAMENTE DESPLEGADO*/
+
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+
+
+/* AHORA HACEMOS QUE SOLAMENTE APAREZCAN LAS OPCIONES PRINCIPALES DEL MENÚ */
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+			 
+			 
+/*CON LA SIGUIENTES INSTRUCCIONES LOS MENÚS SE DESPLIEGAN, AUNQUE SOLO CORRECTAMENTE EL PRIMER SUBMENÚ.
+   EL SEGUNDO SUBMENÚ HABRÍA QUE COLOCARLO A LA DERECHA */						 
+			.nav li:hover > ul {
+				display:block;
+			}
+	
+
+		 	
+/* POSICIONAMOS DE FORMA RELATIVA AL MENU DE NIVEL 1 PARA QUE EL MENÚ DE NIVEL 2 APAREZCA POSICIONADO CON RESPECTO A SU PADRE */						
+			.nav li ul li {
+				position:relative;
+			}
+
+	 		.nav li ul li ul {
+				right:-100px;
+				top:0px;
+			}

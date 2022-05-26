@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+ul>li{
+    list-style: none;
+    text-align: left;
+}
+li{
+   
+    background-color: black;
+    color: white;
+    width: 20%;
+}
+
+li{  
+    padding: 3%;
+}
+li> ul> li{  
+    padding: 3%;
+    
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#lista li ul {
+    display:none;
+    position:absolute;
+    min-width:70px;
+}
+#lista li:hover > ul {
+    
+   display:block;
+    left: 100px;
+    position: relative;
+   /* background-color: grey;*/
+
+}
+#lista li:hover>ul>li>ul{
+    
+    position:relative;
+    left:70px;
+    bottom: 10px;
+   
+
+}
+
+ #lista li:hover{
+
+    background-color: grey;
+}
