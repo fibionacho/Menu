@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="proyecto.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 red"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2 yellow"></div>
+        </div>
+        <div class="row">
+            <!--Asi les das tu el grosor que quieras-->
+            <div class="col-md-6 blue"></div>
+            <div class="col-md-4 yellow"></div>
+            <div class="col-md-2 red"></div>
+        </div>
+
+    </div>
+
+    <!--desde aquí se puede ver como se le autoasigna tamaño-->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col red"></div>
+            <div class="col blue"></div>
+            <div class="col red"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--de md en adelante divide en 3 columnas, para mas pequeñas se convierten en elementos de bloque-->
+            <div class="col-md red"></div>
+            <div class="col-md blue"></div>
+            <div class="col-md red"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <!--con el auto ocupa el espacio del contenido-->
+            <div class="col-md-auto red">Hola</div>
+            <div class="col-md-auto blue">cómo estás</div>
+            <div class="col-md-auto red">Me voy a ir yendo ya</div>
+        </div>
+    </div>
+
+    <!--forzar salto de linea-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 celda blue"></div>
+            <div class="col-md-2 celda red"></div>
+            <div class="w-100"></div>
+            <div class="col-md-3 celda blue"></div>
+            <div class="col-md-2 celda red"></div>
+        </div>
+    </div>
+
+    <!--Probando el gutter (padding entre cols)-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">Elemento con gutter</div>
+            <div class="col-md-6">Elemento con gutter</div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col-md-6">Elemento sin gutter</div>
+            <div class="col-md-6">segundo elemento</div>
+        </div>
+    </div>
+
+
+    <!--Mover columnas-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 offset-md-1 red"></div>
+            <div class="col-sm-4  offset-sm-4  offset-md-2 blue"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+div.container div div{
+    height: 60px;
+}
+div.red{
+    background-color: red;
+}
+div.blue{
+    background-color: blue;
+}
+div.yellow{
+    background-color: yellow;
+}
+.row div h3{
+    border: 1px solid black;
+}
